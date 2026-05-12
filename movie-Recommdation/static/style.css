@@ -1,0 +1,94 @@
+body {
+  background: #111;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  padding: 40px;
+}
+
+.box {
+  width: 60%;
+  margin: auto;
+}
+
+input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 12px 20px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.results {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: #fff
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px
+}
+
+.search {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 30px 0
+}
+
+input {
+  width: 380px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none
+}
+
+button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #ef4444;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+  margin-top: 25px
+}
+
+.card {
+  background: rgba(255, 255, 255, .08);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .25)
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 22px
+}
