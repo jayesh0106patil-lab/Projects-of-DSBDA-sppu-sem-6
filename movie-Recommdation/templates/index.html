@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><title>Movie Recommender</title><link rel='stylesheet' href='{{url_for("static",filename="style.css")}}'></head><body>
+<div class='wrap'>
+<h1>🎬 Movie Recommendation</h1>
+<form method='post' class='search'>
+<input name='movie' placeholder='Enter movie name e.g. Avatar' required>
+<button>Search</button>
+</form>
+<div class='grid'>
+{% for m in results %}
+<div class='card'>
+<h2>{{m.title}}</h2>
+<p><b>Genre:</b> {{m.genre}}</p>
+<p><b>Director:</b> {{m.director}}</p>
+</div>
+{% endfor %}
+{% if search and not results %}<p>No movie found.</p>{% endif %}
+</div></div></body></html>
