@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COVID Dashboard</title>
+<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+
+<div class="main">
+
+<h1>💉 COVID Dashboard</h1>
+
+<div class="cards">
+<div class="card red">First Dose <span>{{first}}</span></div>
+<div class="card blue">Second Dose <span>{{second}}</span></div>
+<div class="card green">Male <span>{{male}}</span></div>
+<div class="card pink">Female <span>{{female}}</span></div>
+</div>
+
+<div class="grid">
+{% for row in records %}
+<div class="box">
+<h3>{{row[state_col]}}</h3>
+<p>First Dose: {{row[first_col]}}</p>
+<p>Second Dose: {{row[second_col]}}</p>
+</div>
+{% endfor %}
+</div>
+
+</div>
+
+</body>
+</html>
